@@ -4,18 +4,33 @@ header {
     width: 100%;
     border-bottom: 2px dashed @navigation-border;  
     div {
-        width: 800px;
+        max-width: 800px;
         .flex-set(row,space-between,center,baseline);
         margin: 20px auto;
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+        }
+        .logo {
+            @media @mobile {
+                margin-bottom: 20px;
+              }
+        }
         nav {
             font-size: 1.5rem;
             width: 40%;
             .flex-set(row,space-between,center,baseline);
+            @media @mobile {
+                width: 100%;
+            }
             a {
                 text-decoration: none;
-                color: black;
+                color: @shark;
             }
         }
+
+       
     }     
             
 }
