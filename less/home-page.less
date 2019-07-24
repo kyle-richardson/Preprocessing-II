@@ -1,5 +1,11 @@
 .home {
-
+  .top-section {
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 10px;
+    h2 {
+      margin: 10px auto;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +62,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .set-button(@button-bg,@white,solid,@shark);
+        width: 85%;
+        font-size: 1.5em;
+        border-radius: 8px;
+      }
     }
   }
 }// home
