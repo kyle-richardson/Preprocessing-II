@@ -234,6 +234,12 @@ header div nav a {
   text-decoration: none;
   color: #212529;
 }
+header div nav a:hover {
+  color: #17A2B8;
+}
+header div nav a:active {
+  color: #FFEBCD;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -353,6 +359,12 @@ header div nav a {
   width: 85%;
   font-size: 1.5em;
   border-radius: 8px;
+}
+.home .content-pick .destination button:hover {
+  background-color: #128294;
+}
+.home .content-pick .destination button:active {
+  background-color: #36cee6;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination button {

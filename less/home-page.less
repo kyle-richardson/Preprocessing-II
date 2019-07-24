@@ -95,6 +95,12 @@
         width: 85%;
         font-size: 1.5em;
         border-radius: 8px;
+        &:hover {
+          background-color: darken(@button-bg,8%);
+        }
+        &:active {
+          background-color: lighten(@button-bg,15%);
+        }
         @media @mobile {
           width: 100%;
         }
