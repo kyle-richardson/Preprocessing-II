@@ -64,19 +64,44 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn" onclick="window.location.href = '#contact-form';">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn" onclick="window.location.href = '#contact-form';">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn" onclick="window.location.href = '#contact-form';">Sign Me Up!</button>
       </div>
     </section>
+    <section id="contact-form">
+      <h2>Book your trip!</h2>
+      <form action="#">
+      
+          <label for="fname">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="First Last">
+      
+          <label for="lname">Email</label>
+          <input type="text" id="email" name="email" placeholder="test@email.com">
+      
+          <label for="package">Package</label>
+          <select id="package" name="package">
+          <option value="fun-sun">Fun in the Sun</option>
+          <option value="mountain">Mountain Excursion</option>
+          <option value="island">Island Getaway</option>
+          
+          </select>
+      
+          <label for="subject">Additional information</label>
+          <textarea id="subject" name="subject" placeholder="Anything else we should know? (How many are attending, special considerations)" style="height:100px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+      </form>
+  </section>
   </div><!-- container -->
 
   <footer class="footer">
