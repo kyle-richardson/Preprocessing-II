@@ -225,6 +225,11 @@ header div nav {
   align-content: center;
   align-items: baseline;
 }
+@media (max-width: 800px) {
+  header div nav {
+    width: 50%;
+  }
+}
 @media (max-width: 500px) {
   header div nav {
     width: 100%;
