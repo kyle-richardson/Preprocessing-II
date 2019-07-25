@@ -88,13 +88,14 @@
       @media @mobile {
         width: 85%;
       }
-      button {
+      .btn {
         padding-top: 10px;
         padding-bottom: 10px;
         .set-button(@button-bg,@white,solid,@shark);
         width: 85%;
         font-size: 1.5em;
         border-radius: 8px;
+        .grow-animation(1s,1.3);
         &:hover {
           background-color: darken(@button-bg,8%);
         }

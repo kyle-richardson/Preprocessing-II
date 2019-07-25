@@ -12,3 +12,10 @@
     color: @textcolor;
     border: 1px @border-type @border-color;
 }
+
+.grow-animation(@time, @size) {
+    transition: transform @time;
+    &:hover {
+        transform: scale(@size);
+    }
+}

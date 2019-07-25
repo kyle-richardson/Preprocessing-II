@@ -350,7 +350,7 @@ header div nav a:active {
     width: 85%;
   }
 }
-.home .content-pick .destination button {
+.home .content-pick .destination .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #17A2B8;
@@ -359,15 +359,19 @@ header div nav a:active {
   width: 85%;
   font-size: 1.5em;
   border-radius: 8px;
+  transition: transform 1s;
 }
-.home .content-pick .destination button:hover {
+.home .content-pick .destination .btn:hover {
+  transform: scale(1.3);
+}
+.home .content-pick .destination .btn:hover {
   background-color: #128294;
 }
-.home .content-pick .destination button:active {
+.home .content-pick .destination .btn:active {
   background-color: #36cee6;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination button {
+  .home .content-pick .destination .btn {
     width: 100%;
   }
 }
