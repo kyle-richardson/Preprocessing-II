@@ -1,1 +1,21 @@
 // Mixins in here
+.flex-set(@direction, @justify, @align, @align-items) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-content: @align;
+    align-items: @align-items;   
+}
+
+.set-button(@background,@textcolor,@border-type,@border-color) {
+    background-color: @background;
+    color: @textcolor;
+    border: 1px @border-type @border-color;
+}
+
+.grow-animation(@time, @size) {
+    transition: transform @time;
+    &:hover {
+        transform: scale(@size);
+    }
+}
